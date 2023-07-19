@@ -13,11 +13,36 @@
 
     <!-- já é uma processo de responsividade -->
     <div id="pagina">
-        <img src="images/mulherdancando.jpg" alt="mulherdancando">
+        <nav>
+            <img src="images/menuIcon.svg" alt="Menu" id="menu" onclick="mostrar()">
+            <ul id="menuOpcoes">
+                <li>Opçao</li>
+                <li>Opçao</li>
+                <li>Opçao</li>
+                <li>Opçao</li>
+                <li>Opçao</li>
+            </ul>
+        </nav>
+
+
+        <!-- Banner para baixo -->
+        <picture>
+            <source media="(max-width : 600px)" srcset="images/mulherdancandoMenor.jpg" class="banner">
+            <img src="images/mulherdancando.jpg" alt="mulherdancando" class="banner">
+        </picture>        
         <h1>Titulo</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iure aspernatur officiis voluptate animi dolores ad, dignissimos, voluptas non atque consequuntur reprehenderit aperiam aut consequatur doloribus perferendis corrupti accusantium laudantium.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iure aspernatur officiis voluptate animi dolores ad, dignissimos, voluptas non atque consequuntur reprehenderit aperiam aut consequatur doloribus perferendis corrupti accusantium laudantium.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iure aspernatur officiis voluptate animi dolores ad, dignissimos, voluptas non atque consequuntur reprehenderit aperiam aut consequatur doloribus perferendis corrupti accusantium laudantium.</p>
     </div>
+    <script>
+        function mostrar(){
+            if (menuOpcoes.style.display == "none"){
+                menuOpcoes.style.display = "block"
+            } else{
+                menuOpcoes.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
